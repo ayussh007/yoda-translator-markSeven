@@ -1,7 +1,14 @@
 // get me the button, get me the input, get me the output
+//The querySelector() method returns the first element that matches a CSS selector.
+// To return all matches (not only the first), use the querySelectorAll() instead.
+// for id we use "#" and for class we use "."
+//querySelector - it is a way to tell your browser that Hey Browser I need that element which has ID or class - #id_name
+
+//give any name here                      //id name using #
 var btnTranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
+
 
 
 //  now we need a serverURL as we need to talk to the server
@@ -18,7 +25,9 @@ function errorHandler(error) {
     alert("something wrong with server! try again after some time")
 }
 
-// we deifend a clickhandler like what to do when click happens: read the input go and fetch url convert that response to response.json and take the translated text and show the output
+// we deifend a clickhandler like what to do when click happens: read the input go and fetch url convert that 
+// response to response.json and take the translated text and show the output
+
 function clickHandler() {
      var inputText = txtInput.value; // taking input
 
@@ -33,6 +42,8 @@ function clickHandler() {
 };
 
 // hey browser do this functionality when click happens
+// The addEventListener() method : Add an event listener that fires when a user clicks a button
+// Syntax: element.addEventListener(event, function)
 btnTranslate.addEventListener("click", clickHandler)
 
 
