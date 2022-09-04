@@ -1,0 +1,86 @@
+ /* Selector types for CSS
+    .class -> .intro ->  Selects all elements with class="intro" 
+    #id -> #name -> Selects the element with id="name"
+    * -> selects all elements
+    element -> p -> Selects all <p> elements
+    element.class -> p.intro -> Selects all <p> elements with class="intro" 
+    element, element -> div, p ->  Selects all <div> elements and all <p> elements 
+    element element -> div p -> Selects all <p> elements inside <div> elements */
+:root {
+    --primary-blue: #58F3D1;
+    --secondary-blue: #D1FAE5;
+    --primary-lack: #212121;
+    font-family: "OctemberScript";
+   }
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+   body {
+       
+       background-color: var(--primary-blue);
+   }
+  
+   textarea {
+       width: 40%;
+       padding: 1rem;
+       border: 2px solid var(--primary-lack);
+       font-size: large;
+   }
+
+   header {
+       padding: 10px;
+    }
+
+    button {
+        background-color: var(--secondary-blue);
+        margin: 1rem 0rem;
+        padding: 1rem 2rem;
+        font-size: large;
+        width: max-content;
+    }
+
+    .outputHeading {
+        margin-bottom: 5px;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    #output {
+        width: 40%;
+        height: 15vh;
+        padding: 1rem;
+        margin-top: 15px;
+        border: 2px solid var(--primary-lack);
+        font-size: large;
+        background-color: var(--secondary-blue);
+    }
+
+    .inputtext {
+        border-color: var(--primary-lack);
+        background-color: var(--secondary-blue);
+        height: 10rem;
+     }
+
+     footer {
+        position: fixed;
+        background-color: var(--secondary-blue);
+        width: 100%;
+        bottom: 0;
+        margin-left: -8px;
+    }
+
+    .footer-head {
+        font-size: larger;
+        font-weight: bolder;
+        margin: 10px;
+    }
+
+    .footer-para {
+        font-size: larger;
+        font-weight: bolder;
+        margin: 10px;
+    }
